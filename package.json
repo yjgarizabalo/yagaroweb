@@ -2,6 +2,32 @@
   "name": "yagaroweb",
   "type": "module",
   "version": "0.0.1",
+  "description": "Portafolio personal de Yagaroweb",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Yagaro"
+  },
+  "homepage": "",
+  "contributors": [
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "keywords": [
+    "portfolio",
+    "Astro",
+    "react",
+    "tailwindcss",
+    "typescript",
+    "shadCn"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,8 +36,29 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.13",
     "@astrojs/check": "^0.9.4",
-    "typescript": "^5.7.2"
+    "@astrojs/mdx": "^4.0.0-beta.3",
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/tailwind": "^5.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-tabs": "^1.1.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "astro": "^5.0.0-beta.7",
+    "astro-icon": "^1.1.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "extract-colors": "^4.1.0",
+    "lucide-react": "^0.456.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss": "^3.4.14",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15"
   }
 }

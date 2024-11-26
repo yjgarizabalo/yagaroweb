@@ -1,16 +1,21 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import ProfileInfo from "../components/ProfileInfo.astro";
+import ProfileActionButton from "../components/ProfileActionButton.astro";
+import TabsButtons from "../components/TabsButtons.tsx";
+import ProjectsCC from '@/components/ProjectsCC.astro';
+import AboutMeCC from "../components/AboutMeCC.astro";
+import ProfileFacts from "../components/ProfileFacts.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="John Doe | Portfolio | Home" scrollSmooth={false}>
+	<main class="container py-24 flex gap-8 flex-col">
+		<ProfileInfo />
+		<ProfileFacts />
+		<ProfileActionButton />
+		<TabsButtons client:idle >
+			<ProjectsCC slot="portfolio" />
+			<AboutMeCC slot="about" />
+		</TabsButtons>
+	</main>
+</Layout>
